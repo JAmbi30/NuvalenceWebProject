@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Rectangle</title>
+  </head>
+  <body>
+    <h1 style="margin: 5px">Rectangle Position Relation</h1>
+    
+    <div style="width: 800px; margin: 10px;">
+    	<p>Each rectangle is represented by the left bottom coordinate and right top coordinate. Each coordinate value is separated by comma (no space in between), and each coordinate value is non-negative integer.</p>
+    	<p>In order to determine the position relation of two rectangles, please enter the left bottom coordinate and right top coordinate of the rectangle into each blank below. 
+    	And then click on "Determine Position Relation" button. Results will show below "Position Result".</p>
+    	<p>For example, for Rectangle 1 with left bottom coordinate of (0, 1) and right top coordinate of (3, 5), please enter 0,1,3,5 into the blank under "Rectangle 1".</p>
+    	<p>To re-enter rectangle coordinates, please click on "Reset" button.</p>
+    </div>
+
+  	<div style="width: 200px" class="form-group col-auto" id="rectangle-input">
+    	<label for="RectangleCoordinate1" style="font-weight: bold">Rectangle 1</label>
+    	<input class="form-control" placeholder="0,0,1,1" id="rectangle-1">
+  	</div>
+  	<div style="width: 200px" class="form-group col-auto">
+    	<label for="RectangleCoordinate2" style="font-weight: bold">Rectangle 2</label>
+    	<input class="form-control" placeholder="0,0,1,1" id="rectangle-2">
+  	</div>
+  	<button style="margin: 10px" class="btn btn-primary" id="position-btn">Determine Position Relation</button>
+    <button style="margin: 10px" class="btn btn-primary" id="reset-btn">Reset</button>
+  	
+  	<p style="margin: 10px" id="input-validation"></p>
+  	
+	 <p style="margin: 10px; font-weight: bold;">Position Result</p>
+	 
+	 <ul id="result-list">
+	  </ul>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  	<script src="scripts/main.js"></script>
+  </body>
+</html>
