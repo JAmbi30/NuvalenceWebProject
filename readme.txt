@@ -36,8 +36,8 @@ Assumptions:
  taken into consideration for this project.
  2. Touching rectangles at a single point are not considered as any of the 
  three position relations.
- 3. Input coordinate values are integer. This value is in the range from
- -2147483648 to 2147483647. 
+ 3. Input coordinate values are non-negative integers. This value is in the range 
+ from 0 to 2147483647. 
 
 -----------------------------------------------------------------------------
 Instruction:
